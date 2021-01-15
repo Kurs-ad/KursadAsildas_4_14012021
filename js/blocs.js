@@ -112,22 +112,6 @@ function scrollToTopView() {
     $(window).scrollTop() > $(window).height() / 3 ? $(".scrollToTop").hasClass("showScrollTop") || $(".scrollToTop").addClass("showScrollTop") : $(".scrollToTop").removeClass("showScrollTop")
 }
 
-function setUpVisibilityToggle() {
-    $(document).on("click", "[data-toggle-visibility]", function(t) {
-        t.preventDefault();
-        var e = $(this).attr("data-toggle-visibility");
-        if (-1 != e.indexOf(",")) {
-            var i = e.split(",");
-            $.each(i, function(t) {
-                a($("#" + i[t]))
-            })
-        } else a($("#" + e));
-
-        function a(t) {
-            t.is("img") ? t.toggle() : t.slideToggle()
-        }
-    })
-}
 
 function setUpLightBox() {
     window.targetLightbox, $(document).on("click", "[data-lightbox]", function(t) {
