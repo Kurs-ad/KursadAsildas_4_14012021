@@ -103,6 +103,7 @@ sub {
 }
 
 img {
+    margin: auto;
     border: 0
 }
 
@@ -2011,6 +2012,7 @@ pre code {
 }
 
 .row {
+    justify-content: center;
     margin-right: -15px;
     margin-left: -15px
 }
@@ -2616,9 +2618,6 @@ pre code {
     }
     .col-md-offset-3 {
         margin-left: 25%
-    }
-    .col-md-offset-2 {
-        margin-left: 16.66666667%
     }
     .col-md-offset-1 {
         margin-left: 8.33333333%
